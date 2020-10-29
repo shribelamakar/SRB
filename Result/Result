@@ -1,0 +1,28 @@
+public class Result
+	{
+	public static String report(double percentage)
+		{
+		System.out.println("Report method invoked");
+		System.out.println("percentage "+percentage);
+
+		if(percentage<=100 && percentage>=90)
+			return "Outstanding";
+
+		if(percentage<=89 && percentage>=80)
+			return "Excellent";
+		
+		if(percentage<=79 && percentage>=70)
+			return "V.Good";
+			
+		if(percentage<=69 && percentage>=60)
+			return "Good";
+			
+		if(percentage<=59 && percentage>=50)
+			return "Above Average";
+			
+		if(percentage<=49 && percentage>=40)
+			return "Poor";
+			
+		return "Fail";
+		}
+	}
